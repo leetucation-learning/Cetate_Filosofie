@@ -1,0 +1,52 @@
+CITIM CETATEA CA PE UN ARGUMENT · Filosofie politică în trei module
+Urban Instances V3 · Cetatea citită · versiunea 1.1 · 24.11.2026
+Conținut: Mihail Curelici (fișele de studiu și fișele de lucru 1–3)
+E-learning: Gelu-Emanuel Cebzan · LEETUCATION SRL
+Finanțat de Municipiul Timișoara prin Centrul de Proiecte și Administrația pentru Sănătate și Educație.
+
+1. CE E ÎN ARHIVĂ
+   Un pachet SCORM 2004 (ediția a 3-a), un singur SCO cu trei module: 01 Omul și cetatea (natura umană și comunitatea),
+   02 Cine conduce și în folosul cui (regimurile politice), 03 Cine stabilește binele comun (ideologiile politice).
+   82 de ecrane, 80 dintre ele cu voce (≈ 63 de minute), 7 exerciții interactive, 3 verificări cu explicații,
+   3 fișe de lucru interactive (descărcabile .docx sau PDF), bibliografia completă și spațiu pentru lecturi.
+
+2. ÎN LMS (Oracle Learning sau altul)
+   Încarcă arhiva .zip așa cum e (imsmanifest.xml e la rădăcină).
+   Completion: cmi.completion_status = completed și cmi.success_status = passed când toate cele trei module au fost
+   parcurse până la ultimul ecran (bibliografia). Fișele de lucru nu blochează finalizarea.
+   Se mai trimit: progress_measure, location, suspend_data (răspunsuri, notițe, fișe), scor informativ din verificări
+   (prima încercare) și răspunsurile din fișe ca cmi.interactions (long-fill-in; likert pentru feedback).
+   În Oracle Learning: lasă scorul de promovare (mastery score) gol sau 0; cursul nu are prag de promovare.
+   Butonul „Ieși din curs” (ecranul final) salvează și închide sesiunea; la închiderea ferestrei, același lucru.
+   În LMS, progresul se păstrează doar în LMS (nu în browser), ca să nu se amestece datele pe calculatoare comune.
+
+3. PE PC, FĂRĂ LMS
+   Dezarhivează și deschide index.html în Chrome, Edge sau Firefox. Progresul se păstrează în browser (localStorage).
+
+4. PE GITHUB PAGES (sau orice găzduire statică)
+   Prin browser: arhiva „..._GitHub_incarcare_in_7_pasi.zip” (vezi PASI.txt din ea): 7 încărcări mici, în ordine.
+   Cu GitHub Desktop sau git: arhiva „..._web_GitHubPages.zip”, totul dintr-o dată.
+   Apoi Settings > Pages > Deploy from a branch > main / (root). Adresa: https://<cont>.github.io/<depozit>/.
+   Vocea e împărțită pe foldere (audio/curs, audio/m1, audio/m2, audio/m3), fiecare fișier sub 1,5 MB.
+   Fără LMS, progresul și fișele rămân în browserul elevului.
+
+5. TELEFON, TABLETĂ, PC
+   Pe ecrane late, cursul se scalează la 16:9. Sub o anumită lățime trece singur în modul telefon: ecranele curg
+   pe o coloană, bara de comenzi rămâne jos, fișa de lucru se completează pe verticală.
+
+6. FIȘELE DE LUCRU
+   Câte o fișă pe modul, înaintea bibliografiei, cu aceleași etape și întrebări ca fișele de lucru 1–3; se poate
+   completa și pe parcurs, din butonul Fișa din bara de jos. Indiciile duc la ecranul unde e răspunsul.
+   Descarcă fișa (.docx) generează documentul în browser; Tipărește sau PDF deschide tipărirea (Salvează ca PDF).
+   Dacă LMS-ul blochează descărcările din fereastra cursului, folosește tipărirea.
+
+7. CE POȚI MODIFICA FĂRĂ PROGRAMARE
+   js/config.js → bibSupl: lecturi recomandate de profesor pentru fiecare modul (m1, m2, m3); apar primele pe ecranul
+   de bibliografie. skipIntro: true sare peste logo-ul animat.
+
+8. VOCEA ȘI IMAGINILE
+   Vocea: clonată în Magnific (ElevenLabs v4) din înregistrarea primită, cu acordul vorbitorului; în v1.1, reclonată
+   din înregistrarea curățată de ecou și masterizată (128 kbps, −16 LUFS). Un MP3 pe ecran; elementele apar pe fraze.
+   Imagini și clipuri: generate cu IA în Magnific, în alb-negru (ilustrații, nu documente istorice), ancorate în epoca
+   despre care se vorbește. Bustul lui Aristotel: fotografie Freepik (licență prin Magnific).
+   Fonturi: Instrument Serif și Schibsted Grotesk (SIL Open Font License), incluse local.

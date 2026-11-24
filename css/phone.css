@@ -1,0 +1,87 @@
+/* Modul telefon: ecranele curg pe o coloană (html.m), conținutul la o lățime virtuală ≈ 680 px (zoom: var(--z)) */
+html.m,html.m body{overflow:auto;height:auto;background:var(--ink)}
+.m .app{position:static;display:block}
+.m .canvas{position:relative!important;width:100%;height:auto;transform:none!important;left:0!important;top:0!important}
+.m .stage{position:relative;width:100%;height:auto;min-height:100vh;overflow:visible;padding-bottom:64px;background:var(--ink)}
+.m .scr{position:relative;inset:auto;overflow:visible;zoom:var(--z);min-height:calc((100vh - 64px) / var(--z))}
+.m .hdr{position:relative;top:auto;left:auto;right:auto;height:auto;padding:22px 26px 6px}
+.m .hdr .cp{height:46px}.m .hdr .sig{height:50px}
+.m .cnt{position:relative;inset:auto;padding:14px 26px 26px}
+.m .ftr{position:relative;left:auto;right:auto;bottom:auto;padding:8px 26px 26px;height:auto}
+.m .ftr .crumb{max-width:60%}
+.m h1.t{font-size:58px}.m h1.t.xl{font-size:70px}.m h1.t.l{font-size:62px}
+.m .lead{font-size:28px}
+/* toate grilele pe o coloană */
+.m .concept,.m .tlwrap,.m .pc,.m .pc.wimg,.m .media,.m .ath,.m .ax2,.m .concl .grid,.m .bib,.m .qz,.m .gridx,.m .sortg,.m .seq,.m .two,.m .compwrap,.m .final .grid,.m .about .row,.m .hub .mods,.m .trip,.m .cards,.m .stats,.m .res3,.m .fx,.m .dil,.m .diag,.m .cols3,.m .signs .it,.m .ath .inst,.m .final .res{grid-template-columns:1fr!important;height:auto!important}
+.m .concept .side{height:auto}
+.m .concept .side .ph,.m .tlwrap .ph{height:auto;aspect-ratio:4/3;flex:none}
+.m .tlwrap>div[style]{height:auto!important;padding-top:0!important}
+.m .pc .pcm .ph,.m .pc .ph{height:auto;min-height:0;aspect-ratio:16/9}
+.m .media .ph{height:auto;aspect-ratio:16/9}
+.m .trip{height:auto}.m .trip .c{height:440px}
+.m .ath .ph,.m .ath>div[style]{height:auto!important;aspect-ratio:16/10}
+.m .hub .mc{height:460px}
+.m .sortg{height:auto}.m .pool{max-height:none;overflow:visible}.m .dz{min-height:160px}
+.m .bib{height:auto}.m .bib .lst{overflow:visible}
+.m .two .fact{flex-direction:column}.m .two .fact .ph{width:100%;height:auto;aspect-ratio:16/9}
+.m .map3 .row{grid-template-columns:1fr}
+.m .stairs{height:auto;display:flex;flex-direction:column;gap:12px}
+.m .stairs .s{position:static;width:auto}
+.m .axisline{height:auto;display:flex;flex-direction:column;gap:14px}
+.m .axisline .line,.m .axisline .tick{display:none}
+.m .axisline .end,.m .axisline .mid,.m .axisline .ut{position:static;transform:none;width:auto;text-align:left}
+.m .tl{grid-template-columns:1fr!important;margin-top:20px;padding-left:34px}
+.m .tl::before{left:10px;right:auto;top:0;bottom:0;width:2px;height:auto}
+.m .tl .it{padding-top:0}
+.m .tl .it::before{left:-34px;top:8px}
+.m .tl .y{position:static;font-size:42px;margin-bottom:6px}
+.m .tbl{display:block;overflow-x:auto}
+.m .compass{width:560px;height:500px}
+.m .compass .q{width:274px;height:244px}
+.m .compass .lab{font-size:17px;padding:4px 8px}
+.m .compass .lab.lab-l{left:6px;transform:translate(0,-130%)}
+.m .compass .lab.lab-r{right:6px;transform:translate(0,-130%)}
+.m .compass .lab.lab-t{top:6px;transform:translate(-50%,0)}
+.m .compass .lab.lab-b{bottom:6px;transform:translate(-50%,0)}
+.m .compwrap>div[style]{padding:20px 0!important}
+.m .ty-cover .bg{position:absolute;left:0}.m .shade{background:rgba(15,16,20,.8)!important}
+.m .ty-cover .panel,.m .ty-start .panel,.m .ty-thesis .panel{position:relative;left:auto;top:auto;width:auto;bottom:auto;padding:20px 26px 40px}
+.m .ty-cover .goals{grid-template-columns:1fr;margin-top:30px}
+.m .ty-start h1.t{font-size:76px}
+.m .ty-start .mods{flex-wrap:wrap;gap:16px}
+.m .ty-start .acts{flex-wrap:wrap}
+.m .fund{position:relative;left:auto;right:auto;bottom:auto;padding:10px 26px 30px}
+.m .ty-thesis .big{font-size:52px}
+.m .concl .big{font-size:46px}
+.m .final .big{font-size:60px}
+.m .final .lt{padding:40px 0}
+.m .final .lt img{width:80%}
+.m .final .logos{flex-wrap:wrap}
+.m .qz .qq{font-size:40px}
+.m .signs .it{grid-template-columns:1fr}
+.m .seq li .nm{font-size:30px}
+/* bara: pixeli reali */
+.m .ctl{position:fixed;left:0;right:0;bottom:0;top:auto;width:auto;height:64px;padding:0 8px;gap:6px;z-index:30}
+.m .ctl .b{height:46px;min-width:46px;padding:0 10px;font-size:15px}
+.m .ctl .tm,.m .ctl [data-b=rate],.m .ctl [data-b=all]{display:none}
+.m .ctl .lb{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.m .ctl .sp{flex:1}
+.m .ctl .grp{gap:6px}
+.m .cap{position:fixed;bottom:72px;font-size:16px;max-width:94vw;width:auto;padding:8px 12px;transform:translateX(-50%)}
+.m .intro video{width:100vw;height:100vw}
+.m .modal{position:fixed}
+.m .modal .pane{width:100%;padding:24px 20px 80px}
+.m .modal h2{font-size:42px}
+.m .toast{position:fixed}
+@media (max-width:560px){.m .ctl [data-b=rep],.m .ctl [data-b=mute],.m .ctl [data-b=fs]{display:none}.m .ctl{gap:4px;padding:0 6px}.m .ctl .grp{gap:4px}.m .ctl .b{min-width:44px;padding:0 8px}}
+@media (max-width:350px){.m .ctl [data-b=cc]{display:none}}
+/* v1.1 · fișa de lucru pe telefon */
+.m .wsx .wsg{display:flex;flex-direction:column;height:auto;gap:22px}
+.m .wsid{grid-template-columns:1fr 1fr}
+.m .wsid label:first-child{grid-column:1 / span 2}
+.m .wsnav{grid-template-columns:1fr 1fr}
+.m .wsp{overflow:visible;padding:20px 18px}
+.m .wsact{margin-top:6px}
+.m .wsact .b{flex:1 1 100%}
+.m .lko{flex-wrap:wrap}
+.m .final .lt .lg{width:300px}
